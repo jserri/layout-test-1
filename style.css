@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+html, body {
+    height: 100vh;
+    background-color: orange;
+}
+
+header {
+    width: 100%;
+    background-color: brown ;
+}
+
+nav {
+    display: flex;
+    min-height: 60px;
+    width: 75%;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.left-side {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.right-side {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.wrapper-search {
+    margin-left: 3rem;
+}
+
+.wrapper-search > input {
+    width: 400px;
+    padding: 5px;
+}
+
+.wrapper-login {
+    display: flex;
+    gap: 15px;
+}
+
+.login-button {
+    padding: 8px 15px;
+    background-color: lightslategray;
+}
+
+.register-button {
+    padding: 8px 15px;
+    background-color: lightslategray;
+}
+
+.container-main {
+    display: flex;
+    flex-direction: column;
+    width: 55%;
+    justify-content: center;
+    align-items: center;
+    margin: 5rem auto;
+}
+
+.title {
+    width: 500px;
+    height: 30px;
+    background-color: slateblue;
+}
+
+.wrapper-main {
+    margin-top: 2rem;
+    width: 100%;
+}
+
+.wrapper-main > .main-content {
+    width: 100%;
+    height: 250px;
+    background-color: slateblue;
+}
+
+.wrapper-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
+    width: 100%;
+    gap: 10px;
+}
+
+.wrapper-card > .card {
+    width: 130px;
+    height: 150px;
+    background-color: teal;
+}
