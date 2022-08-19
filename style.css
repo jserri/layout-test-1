@@ -18,7 +18,7 @@ header {
 
 nav {
     display: flex;
-    min-height: 60px;
+    min-height: 70px;
     width: 75%;
     margin: 0 auto;
     align-items: center;
@@ -51,6 +51,7 @@ nav {
 .wrapper-login {
     display: flex;
     gap: 15px;
+    margin-right: 1rem;
 }
 
 .login-button {
@@ -63,6 +64,12 @@ nav {
     background-color: lightslategray;
 }
 
+.toggle-menu {
+    padding: 8px 20px;
+    background-color: dodgerblue;
+    display: none;
+}
+
 .container-main {
     display: flex;
     flex-direction: column;
@@ -73,7 +80,8 @@ nav {
 }
 
 .title {
-    width: 500px;
+    width: 350px;
+    padding: 0 50px;
     height: 30px;
     background-color: slateblue;
 }
@@ -93,13 +101,60 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 2rem;
+    margin: 2rem 0;
     width: 100%;
     gap: 10px;
 }
 
 .wrapper-card > .card {
     width: 130px;
-    height: 150px;
+    height: 100px;
     background-color: teal;
+}
+
+/* Media Query Tablet */
+
+@media screen and (max-width: 1280px) {
+    
+    nav {
+        width: 95%;
+    }
+
+    .toggle-menu {
+        display: block;
+        padding: 17px 18px;
+    }
+
+    .container-main {
+        width: 75%;
+    }
+
+    .wrapper-search {
+        display: none;
+    }
+
+}
+
+/* Media Query Smartphone */
+
+@media screen and (max-width: 600px) {
+    
+    .wrapper-login {
+        display: none;
+    }
+
+    .toggle-menu {
+        display: inline-block;
+    }
+
+    .container-main {
+        width: 85%;
+    }
+
+    .title {
+        width: 230px;
+        padding: 0 50px;
+        height: 30px;
+        background-color: slateblue;
+    }
 }
